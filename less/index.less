@@ -63,6 +63,114 @@ body {
 	max-width: @max-width;
 	width: @width;
 	margin: 0 auto;
+	header {
+		font-size: @default-font;
+		.nav-container {
+			nav {
+				.flex();
+				a {
+					text-decoration: none;
+					color: @theme-color;
+					padding: .5em 1em;
+					margin: .5em 0;
+					&:hover {
+						background-color: @theme-color;
+						color: white;
+						border-radius: .5em;
+					}
+				}
+			}
+		}
+	}
+	
+	
+	.banner-container {
+		background-color: @bg-color;
+		display: flex;
+		flex-direction: column;
+		padding: 2em;
+		h1 {
+			font-size: 4rem;
+		}
+		h2 {
+			border-bottom: 1px solid black;
+			padding-bottom: 1em;
+			margin-bottom: 1em;
+		}
+		p {
+			font-size: 1.5rem;
+		}
+		button {
+			background-color: @theme-color;
+			color: white;
+			margin-top: 0.5em;
+			border-radius: .5em;
+			padding: .5em;
+		}
+	}
+	
+	.middle-container {
+		font-size: @default-font;
+		display: flex;
+		justify-content: space-between;
+		.about-content, .skills-content {
+			flex: 1;
+			padding: 0.5em;
+		}
+	
+		h2 {
+			.h2-styles()
+		}
+		
+		p {
+			font-size: 1.5rem;
+		}
+		ul {
+			display: flex;
+			flex-flow: row wrap;
+		}
+		li {
+			font-size: 1.5rem;
+			border: 1px solid black;
+			padding: 1em;
+			padding-left: 1em;
+			flex: 1;
+		}
+	}
+	
+	.bottom-container {
+		font-size: @default-font;
+		h2 {
+			.h2-styles()
+		}
+		table {
+			width: 100%;
+			font-size: .8em;
+			.table-heading {
+				font-weight: bold;
+			}
+			.exp1, .exp3 {
+				background-color: @bg-color;
+			}
+			tr {
+				border-top: .5px solid black;
+			}
+			th {
+				padding: .5em;
+			}
+		}
+	}
+	
+	footer {
+		font-size: 1.5rem;
+		margin-top: 1em;
+		background-color: @theme-color;
+		p {
+			text-align: center;
+			padding: 2em;
+			color: white;
+		}
+	}
 }
 
 // mixins
@@ -84,112 +192,3 @@ body {
 @bg-color: rgb(233, 231, 231);
 @max-width: 800px;
 @width: 80%;
-
-header {
-	font-size: @default-font;
-	.nav-container {
-		nav {
-			.flex();
-			a {
-				text-decoration: none;
-				color: @theme-color;
-				padding: .5em 1em;
-				margin: .5em 0;
-				&:hover {
-					background-color: @theme-color;
-					color: white;
-					border-radius: .5em;
-				}
-			}
-		}
-	}
-}
-
-
-.banner-container {
-	background-color: @bg-color;
-	display: flex;
-	flex-direction: column;
-	padding: 2em;
-	h1 {
-		font-size: 4rem;
-	}
-	h2 {
-		border-bottom: 1px solid black;
-		padding-bottom: 1em;
-		margin-bottom: 1em;
-	}
-	p {
-		font-size: 1.5rem;
-	}
-	button {
-		background-color: @theme-color;
-		color: white;
-		margin-top: 0.5em;
-		border-radius: .5em;
-		padding: .5em;
-	}
-}
-
-.middle-container {
-	font-size: @default-font;
-	display: flex;
-	justify-content: space-between;
-	.about-content, .skills-content {
-		flex: 1;
-		padding: 0.5em;
-	}
-
-	h2 {
-		.h2-styles()
-	}
-	
-	p {
-		font-size: 1.5rem;
-	}
-	ul {
-		display: flex;
-		flex-flow: row wrap;
-	}
-	li {
-		font-size: 1.5rem;
-		border: 1px solid black;
-		padding: 1em;
-		padding-left: 1em;
-		flex: 1;
-	}
-}
-
-.bottom-container {
-	font-size: @default-font;
-	h2 {
-		.h2-styles()
-	}
-	table {
-		width: 100%;
-		font-size: .8em;
-		.table-heading {
-			font-weight: bold;
-		}
-		.exp1, .exp3 {
-			background-color: @bg-color;
-		}
-		tr {
-			border-top: .5px solid black;
-		}
-		th {
-			padding: .5em;
-		}
-	}
-}
-
-footer {
-	font-size: 1.5rem;
-	margin-top: 1em;
-	background-color: @theme-color;
-	p {
-		text-align: center;
-		padding: 2em;
-		color: white;
-	}
-}

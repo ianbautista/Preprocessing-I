@@ -140,107 +140,107 @@ body {
   width: 80%;
   margin: 0 auto;
 }
-header {
+body header {
   font-size: 2rem;
 }
-header .nav-container nav {
+body header .nav-container nav {
   display: flex;
   justify-content: flex-end;
   flex-flow: row nowarp;
 }
-header .nav-container nav a {
+body header .nav-container nav a {
   text-decoration: none;
   color: lightslategray;
   padding: 0.5em 1em;
   margin: 0.5em 0;
 }
-header .nav-container nav a:hover {
+body header .nav-container nav a:hover {
   background-color: lightslategray;
   color: white;
   border-radius: 0.5em;
 }
-.banner-container {
+body .banner-container {
   background-color: #e9e7e7;
   display: flex;
   flex-direction: column;
   padding: 2em;
 }
-.banner-container h1 {
+body .banner-container h1 {
   font-size: 4rem;
 }
-.banner-container h2 {
+body .banner-container h2 {
   border-bottom: 1px solid black;
   padding-bottom: 1em;
   margin-bottom: 1em;
 }
-.banner-container p {
+body .banner-container p {
   font-size: 1.5rem;
 }
-.banner-container button {
+body .banner-container button {
   background-color: lightslategray;
   color: white;
   margin-top: 0.5em;
   border-radius: 0.5em;
   padding: 0.5em;
 }
-.middle-container {
+body .middle-container {
   font-size: 2rem;
   display: flex;
   justify-content: space-between;
 }
-.middle-container .about-content,
-.middle-container .skills-content {
+body .middle-container .about-content,
+body .middle-container .skills-content {
   flex: 1;
   padding: 0.5em;
 }
-.middle-container h2 {
+body .middle-container h2 {
   padding: 0.5em 0;
   margin-top: 0.5em;
 }
-.middle-container p {
+body .middle-container p {
   font-size: 1.5rem;
 }
-.middle-container ul {
+body .middle-container ul {
   display: flex;
   flex-flow: row wrap;
 }
-.middle-container li {
+body .middle-container li {
   font-size: 1.5rem;
   border: 1px solid black;
   padding: 1em;
   padding-left: 1em;
   flex: 1;
 }
-.bottom-container {
+body .bottom-container {
   font-size: 2rem;
 }
-.bottom-container h2 {
+body .bottom-container h2 {
   padding: 0.5em 0;
   margin-top: 0.5em;
 }
-.bottom-container table {
+body .bottom-container table {
   width: 100%;
   font-size: 0.8em;
 }
-.bottom-container table .table-heading {
+body .bottom-container table .table-heading {
   font-weight: bold;
 }
-.bottom-container table .exp1,
-.bottom-container table .exp3 {
+body .bottom-container table .exp1,
+body .bottom-container table .exp3 {
   background-color: #e9e7e7;
 }
-.bottom-container table tr {
+body .bottom-container table tr {
   border-top: 0.5px solid black;
 }
-.bottom-container table th {
+body .bottom-container table th {
   padding: 0.5em;
 }
-footer {
+body footer {
   font-size: 1.5rem;
   margin-top: 1em;
   background-color: lightslategray;
 }
-footer p {
+body footer p {
   text-align: center;
   padding: 2em;
   color: white;
