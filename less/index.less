@@ -100,12 +100,17 @@ body {
 		p {
 			font-size: 1.5rem;
 		}
-		button {
-			background-color: @theme-color;
-			color: white;
-			margin-top: 0.5em;
-			border-radius: .5em;
-			padding: .5em;
+		div {
+			padding: 1em 0;
+			a {
+				background-color: @theme-color;
+				color: white;
+				font-size: .8em;
+				text-decoration: none;
+				margin-top: 2em;
+				border-radius: .5em;
+				padding: .5em;
+			}
 		}
 	}
 	
@@ -136,6 +141,20 @@ body {
 			padding-left: 1em;
 			flex: 1;
 		}
+		@media(max-width: 500px) {
+			flex-direction: column;
+		}
+	}
+
+	.contact-form {
+		font-size: @default-font;
+		width: 35%;
+		min-width: 300px;
+		margin: 0 auto;
+		margin-top: 1em;
+		padding: 1.8em;
+		border: 2px solid @theme-color;
+		border-radius: 1em;
 	}
 	
 	.bottom-container {
