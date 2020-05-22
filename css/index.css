@@ -136,6 +136,9 @@ body {
   font-size: 62.5%;
   font-family: 'Jost', sans-serif;
 }
+a {
+  text-decoration: none;
+}
 body {
   max-width: 800px;
   width: 80%;
@@ -150,7 +153,6 @@ body header .nav-container nav {
   flex-flow: row nowarp;
 }
 body header .nav-container nav a {
-  text-decoration: none;
   color: lightslategray;
   padding: 0.5em 1em;
   margin: 0.5em 0;
@@ -161,7 +163,7 @@ body header .nav-container nav a:hover {
   border-radius: 0.5em;
 }
 body .banner-container {
-  background-color: #e9e7e7;
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   display: flex;
   flex-direction: column;
   padding: 2em;
@@ -184,7 +186,6 @@ body .banner-container div a {
   background-color: lightslategray;
   color: white;
   font-size: 0.8em;
-  text-decoration: none;
   margin-top: 2em;
   border-radius: 0.5em;
   padding: 0.5em;
@@ -222,6 +223,25 @@ body .middle-container li {
     flex-direction: column;
   }
 }
+body .gallery {
+  display: flex;
+  flex: 1;
+}
+body .gallery div {
+  min-width: 300px;
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+}
+body .gallery div a img {
+  display: inline-block;
+  width: 100%;
+}
+body .gallery div a img:hover {
+  transform: scale(1.5);
+}
 body .contact-form {
   font-size: 2rem;
   width: 35%;
@@ -248,7 +268,7 @@ body .bottom-container table .table-heading {
 }
 body .bottom-container table .exp1,
 body .bottom-container table .exp3 {
-  background-color: #e9e7e7;
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
 body .bottom-container table tr {
   border-top: 0.5px solid black;
@@ -259,10 +279,13 @@ body .bottom-container table th {
 body footer {
   font-size: 1.5rem;
   margin-top: 1em;
-  background-color: lightslategray;
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
 body footer p {
   text-align: center;
   padding: 2em;
-  color: white;
+  color: lightslategray;
+}
+.background-theme {
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
