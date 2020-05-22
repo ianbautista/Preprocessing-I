@@ -232,6 +232,7 @@ body .gallery {
   flex: 1;
 }
 body .gallery div {
+  width: 100%;
   min-width: 300px;
   min-height: 200px;
   display: flex;
@@ -245,6 +246,11 @@ body .gallery div a img {
 }
 body .gallery div a img:hover {
   transform: scale(1.5);
+}
+@media (max-width: 500px) {
+  body .gallery {
+    flex-direction: column;
+  }
 }
 body .contact-form {
   font-size: 2rem;
