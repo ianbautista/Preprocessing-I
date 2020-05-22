@@ -190,6 +190,10 @@ body .banner-container div a {
   border-radius: 0.5em;
   padding: 0.5em;
 }
+body .banner-container .call-btn,
+body .banner-container .email-btn {
+  display: inline;
+}
 body .middle-container {
   font-size: 2rem;
   display: flex;
