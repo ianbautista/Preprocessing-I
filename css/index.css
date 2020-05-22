@@ -144,6 +144,12 @@ body {
   width: 80%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  body {
+    width: 100%;
+    margin: 0;
+  }
+}
 body header {
   font-size: 2rem;
 }
@@ -151,6 +157,11 @@ body header .nav-container nav {
   display: flex;
   justify-content: flex-end;
   flex-flow: row nowarp;
+}
+@media (max-width: 500px) {
+  body header .nav-container nav {
+    justify-content: center;
+  }
 }
 body header .nav-container nav a {
   color: lightslategray;
@@ -168,8 +179,29 @@ body .banner-container {
   flex-direction: column;
   padding: 2em;
 }
+body .banner-container div .desktop-img {
+  display: inline-block;
+}
+@media (max-width: 500px) {
+  body .banner-container div .desktop-img {
+    display: none;
+  }
+}
+body .banner-container div .mobile-img {
+  display: none;
+}
+@media (max-width: 500px) {
+  body .banner-container div .mobile-img {
+    display: inline-block;
+  }
+}
 body .banner-container h1 {
   font-size: 4rem;
+}
+@media (max-width: 500px) {
+  body .banner-container h1 {
+    font-size: 5.5rem;
+  }
 }
 body .banner-container h2 {
   border-bottom: 1px solid black;
@@ -178,6 +210,11 @@ body .banner-container h2 {
 }
 body .banner-container p {
   font-size: 1.5rem;
+}
+@media (max-width: 500px) {
+  body .banner-container p {
+    font-size: 2rem;
+  }
 }
 body .banner-container div {
   padding: 1em 0;
@@ -208,8 +245,18 @@ body .middle-container h2 {
   padding: 0.5em 0;
   margin-top: 0.5em;
 }
+@media (max-width: 500px) {
+  body .middle-container h2 {
+    font-size: 2.5rem;
+  }
+}
 body .middle-container p {
   font-size: 1.5rem;
+}
+@media (max-width: 500px) {
+  body .middle-container p {
+    font-size: 2rem;
+  }
 }
 body .middle-container ul {
   display: flex;
@@ -265,9 +312,19 @@ body .contact-form {
 body .bottom-container {
   font-size: 2rem;
 }
+@media (max-width: 500px) {
+  body .bottom-container {
+    padding: 0.5em;
+  }
+}
 body .bottom-container h2 {
   padding: 0.5em 0;
   margin-top: 0.5em;
+}
+@media (max-width: 500px) {
+  body .bottom-container h2 {
+    font-size: 2.5rem;
+  }
 }
 body .bottom-container table {
   width: 100%;

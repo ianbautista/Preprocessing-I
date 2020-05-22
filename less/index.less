@@ -48,6 +48,8 @@ table {
 	border-spacing: 0;
 }
 
+// END OF RESET
+
 /* Set every element's box-sizing to border-box */
 * {
 	box-sizing: border-box;
@@ -68,12 +70,19 @@ body {
 	max-width: @max-width;
 	width: @width;
 	margin: 0 auto;
+	@media (max-width: 500px) {
+		width: 100%;
+		margin: 0;
+	}
 	
 	header {
 		font-size: @default-font;
 		.nav-container {
 			nav {
 				.flex();
+				@media (max-width: 500px) {
+					justify-content: center;
+				}
 				a {
 					color: @theme-color;
 					padding: .5em 1em;
@@ -94,8 +103,25 @@ body {
 		display: flex;
 		flex-direction: column;
 		padding: 2em;
+		div {
+			.desktop-img {
+				display: inline-block;
+				@media (max-width: 500px) {
+					display: none;
+				}
+			}
+			.mobile-img {
+				display :none;
+				@media (max-width: 500px) {
+					display: inline-block;
+				}
+			}
+		}
 		h1 {
 			font-size: 4rem;
+			@media (max-width: 500px) {
+				font-size: 5.5rem;
+			}
 		}
 		h2 {
 			border-bottom: 1px solid black;
@@ -104,6 +130,9 @@ body {
 		}
 		p {
 			font-size: 1.5rem;
+			@media (max-width: 500px) {
+				font-size: 2rem;
+			}
 		}
 		div {
 			padding: 1em 0;
@@ -130,11 +159,17 @@ body {
 			padding: 0.5em;
 		}
 		h2 {
-			.h2-styles()
+			.h2-styles();
+			@media (max-width: 500px) {
+				font-size: 2.5rem;
+			}
 		}
 		
 		p {
 			font-size: 1.5rem;
+			@media (max-width: 500px) {
+				font-size: 2rem;
+			}
 		}
 		ul {
 			display: flex;
@@ -191,8 +226,14 @@ body {
 	
 	.bottom-container {
 		font-size: @default-font;
+		@media (max-width: 500px) {
+			padding: .5em;
+		}
 		h2 {
-			.h2-styles()
+			.h2-styles();
+			@media (max-width: 500px) {
+				font-size: 2.5rem;
+			}
 		}
 		table {
 			width: 100%;
